@@ -1,6 +1,7 @@
-package controller;
-import characters.Snake;
-import exception.CollapseException;
+package edu.nju.lab.controller;
+
+import edu.nju.lab.characters.Snake;
+import edu.nju.lab.exception.CollapseException;
 
 
 public class Controller {

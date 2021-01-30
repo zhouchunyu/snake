@@ -1,6 +1,6 @@
-package controller;
+package edu.nju.lab.controller;
 
-import exception.CollapseException;
+import edu.nju.lab.exception.CollapseException;
 
 public interface State {
   public void up();

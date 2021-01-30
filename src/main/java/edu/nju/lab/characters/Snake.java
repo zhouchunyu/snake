@@ -1,11 +1,12 @@
-package characters;
+package edu.nju.lab.characters;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
-import exception.CollapseException;
+import edu.nju.lab.exception.CollapseException;
 
 public class Snake {
   public List<Block> blocks = new ArrayList<Block>();

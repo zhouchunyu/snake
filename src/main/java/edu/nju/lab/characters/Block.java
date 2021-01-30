@@ -1,4 +1,4 @@
-package characters;
+package edu.nju.lab.characters;
 
 public class Block {
   public int x;

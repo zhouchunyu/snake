@@ -1,4 +1,4 @@
-package exception;
+package edu.nju.lab.exception;
 
 public class CollapseException extends Exception {
 

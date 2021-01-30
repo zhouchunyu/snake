@@ -1,12 +1,13 @@
-package controller;
-import characters.Snake;
-import exception.CollapseException;
+package edu.nju.lab.controller;
 
-public class LeftState implements State{
+import edu.nju.lab.characters.Snake;
+import edu.nju.lab.exception.CollapseException;
+
+public class RightState implements State{
   Controller controller;
   Snake snake;
-
-  public LeftState(Controller controller, Snake snake){
+  
+  public RightState(Controller controller, Snake snake){
     this.controller = controller;
     this.snake = snake;
   }
@@ -25,8 +26,8 @@ public class LeftState implements State{
   public void right(){
   }
 
-  public void refresh() throws CollapseException{
-    snake.left();
+  public void refresh()  throws CollapseException{
+    snake.right();
   }
   
 }

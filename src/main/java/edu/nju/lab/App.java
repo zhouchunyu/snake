@@ -1,3 +1,4 @@
+package edu.nju.lab;
 import java.util.Random;
 
 import javafx.animation.AnimationTimer;
@@ -12,16 +13,16 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
-import characters.Snake;
-import characters.Block;
-import characters.Food;
-import characters.Score;
+import edu.nju.lab.characters.Snake;
+import edu.nju.lab.characters.Block;
+import edu.nju.lab.characters.Food;
+import edu.nju.lab.characters.Score;
 
-import controller.Controller;
+import edu.nju.lab.controller.Controller;
 
-import exception.CollapseException;
+import edu.nju.lab.exception.CollapseException;
 
-public class Main extends Application {
+public class App extends Application {
 	// variable
 	static int speed = 5;
 	static int width = 20;
@@ -90,7 +91,7 @@ public class Main extends Application {
 			// add start snake parts
 
 			//If you do not want to use css style, you can just delete the next line.
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("SNAKE GAME");
 			primaryStage.show();
@@ -168,7 +169,6 @@ public class Main extends Application {
 	}
 
 	
-
 	public static void main(String[] args) {
 		launch(args);
 	}

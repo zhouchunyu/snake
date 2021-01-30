@@ -1,8 +1,8 @@
-package controller;
+package edu.nju.lab.controller;
 
-import characters.Snake;
+import edu.nju.lab.characters.Snake;
 
-import exception.CollapseException;
+import edu.nju.lab.exception.CollapseException;
 
 public class DownState implements State {
   Controller controller;
