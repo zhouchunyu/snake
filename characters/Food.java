@@ -13,9 +13,9 @@ public class Food {
     this.color = color;
   }
 
-  public void draw(GraphicsContext gc, int cornersize){
+  public void draw(GraphicsContext gc, int blocksize){
     gc.setFill(color);
-		gc.fillOval(x * cornersize, y * cornersize, cornersize, cornersize);
+		gc.fillOval(x * blocksize, y * blocksize, blocksize, blocksize);
   }
 
 }

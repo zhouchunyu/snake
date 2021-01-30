@@ -24,10 +24,9 @@ import exception.CollapseException;
 public class Main extends Application {
 	// variable
 	static int speed = 5;
-	static int foodcolor = 0;
 	static int width = 20;
 	static int height = 20;
-	static int cornersize = 25;
+	static int blocksize = 25;
 	static Random rand = new Random();
 
 	static Snake snake = new Snake(width, height);
@@ -36,9 +35,9 @@ public class Main extends Application {
 	static Score score = new Score(0);
 
 	static VBox root = new VBox();
-	static Canvas c = new Canvas(width * cornersize, height * cornersize);
+	static Canvas c = new Canvas(width * blocksize, height * blocksize);
 	static GraphicsContext gc = c.getGraphicsContext2D();
-	static Scene scene = new Scene(root, width * cornersize, height * cornersize);
+	static Scene scene = new Scene(root, width * blocksize, height * blocksize);
 
 
 	public void start(Stage primaryStage) {
@@ -104,7 +103,7 @@ public class Main extends Application {
 	public static void tick(GraphicsContext gc) throws CollapseException{
 		// fill background
 		gc.setFill(Color.BLACK);
-		gc.fillRect(0, 0, width * cornersize, height * cornersize);
+		gc.fillRect(0, 0, width * blocksize, height * blocksize);
 
 		controller.refresh();
 
@@ -118,10 +117,10 @@ public class Main extends Application {
 		score.draw(gc);
 
 		//food
-		food.draw(gc, cornersize);
+		food.draw(gc, blocksize);
 
 		// snake
-		snake.draw(gc, cornersize);
+		snake.draw(gc, blocksize);
 	}
 
 	public static Food newFood() {

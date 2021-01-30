@@ -70,12 +70,12 @@ public class Snake {
     return false;
   }
 
-  public void draw(GraphicsContext gc, int cornersize){
+  public void draw(GraphicsContext gc, int blocksize){
     for(Block b : blocks){
 			gc.setFill(Color.LIGHTGREEN);
-			gc.fillRect(b.x * cornersize, b.y * cornersize, cornersize - 1, cornersize - 1);
+			gc.fillRect(b.x * blocksize, b.y * blocksize, blocksize - 1, blocksize - 1);
 			gc.setFill(Color.GREEN);
-			gc.fillRect(b.x * cornersize, b.y * cornersize, cornersize - 2, cornersize - 2);
+			gc.fillRect(b.x * blocksize, b.y * blocksize, blocksize - 2, blocksize - 2);
 		}
     
   }
