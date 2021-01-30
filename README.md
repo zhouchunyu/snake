@@ -1,6 +1,8 @@
 # Snake
 A simple snake game using javafx
-
-## redesign this project using object oriented thought https://github.com/Gaspared/snake
-
+![SnakeOODesign](snake_oo_design.png)
 ![Snake](preview.jpg)
+
+## OO redesign based on this project https://github.com/Gaspared/snake
+
+
