@@ -24,7 +24,7 @@ import edu.nju.lab.exception.CollapseException;
 
 public class App extends Application {
 	// variable
-	static int speed = 5;
+	static int speed = 1;
 	static int width = 20;
 	static int height = 20;
 	static int blocksize = 25;
@@ -73,16 +73,16 @@ public class App extends Application {
 
 			// control
 			scene.addEventFilter(KeyEvent.KEY_PRESSED, key -> {
-				if (key.getCode() == KeyCode.W) {
+				if (key.getCode() == KeyCode.W || key.getCode() == KeyCode.UP) {
 					controller.up();
 				}
-				if (key.getCode() == KeyCode.A) {
+				if (key.getCode() == KeyCode.A || key.getCode() == KeyCode.LEFT) {
 					controller.left();
 				}
-				if (key.getCode() == KeyCode.S) {
+				if (key.getCode() == KeyCode.S || key.getCode() == KeyCode.DOWN) {
 					controller.down();
 				}
-				if (key.getCode() == KeyCode.D) {
+				if (key.getCode() == KeyCode.D || key.getCode() == KeyCode.RIGHT) {
 					controller.right();
 				}
 

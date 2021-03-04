@@ -10,6 +10,7 @@ public class Controller {
   State leftState;
   State rightState;
   State current_state;
+  State next_state;
 
   public Controller(Snake snake){
     this.upState = new UpState(this, snake);
@@ -17,10 +18,12 @@ public class Controller {
     this.leftState = new LeftState(this, snake);
     this.rightState = new RightState(this, snake);
     this.current_state = this.upState;
+    this.next_state = this.upState;
   }
 
   public void refresh() throws CollapseException{
-    current_state.refresh();
+    next_state.refresh();
+    current_state = next_state;
   }
 
   public void up(){
@@ -40,7 +43,7 @@ public class Controller {
   }
 
   public void setState(State state){
-    this.current_state = state;
+    this.next_state = state;
   }
 
   public State getUpState(){
