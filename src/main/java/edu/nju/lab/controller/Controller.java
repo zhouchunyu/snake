@@ -1,10 +1,16 @@
 package edu.nju.lab.controller;
 
+import java.io.Serializable;
+
 import edu.nju.lab.characters.Snake;
 import edu.nju.lab.exception.CollapseException;
 
 
-public class Controller {
+public class Controller implements Serializable{
+  /**
+   *
+   */
+  private static final long serialVersionUID = -6559133862204335880L;
   State upState;
   State downState;
   State leftState;

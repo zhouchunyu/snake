@@ -4,6 +4,10 @@ import edu.nju.lab.characters.Snake;
 import edu.nju.lab.exception.CollapseException;
 
 public class UpState implements State{
+  /**
+   *
+   */
+  private static final long serialVersionUID = 5479416925996181890L;
   Controller controller;
   Snake snake;
   

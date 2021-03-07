@@ -1,6 +1,12 @@
 package edu.nju.lab.characters;
 
-public class Block {
+import java.io.Serializable;
+
+public class Block implements Serializable {
+  /**
+   *
+   */
+  private static final long serialVersionUID = -8382372837976760285L;
   public int x;
   public int y;
 

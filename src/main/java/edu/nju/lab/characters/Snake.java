@@ -1,5 +1,6 @@
 package edu.nju.lab.characters;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +9,12 @@ import javafx.scene.paint.Color;
 
 import edu.nju.lab.exception.CollapseException;
 
-public class Snake {
+public class Snake implements Serializable{
+  /**
+   *
+   */
+  private static final long serialVersionUID = 5858851764274593827L;
+  
   public List<Block> blocks = new ArrayList<Block>();
   public Block tail;
 

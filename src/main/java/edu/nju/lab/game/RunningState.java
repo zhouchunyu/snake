@@ -6,17 +6,18 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
 public class RunningState implements State {
-  AnimationTimer timer;
+  /**
+   *
+   */
+  private static final long serialVersionUID = 2667551074255975872L;
+
   Game game;
-  GraphicsContext gc;
   
-  public RunningState(Game game, AnimationTimer timer, GraphicsContext gc){
-    this.timer = timer;
+  public RunningState(Game game, GraphicsContext gc){
     this.game = game;
-    this.gc = gc;
   }
 
-  public void spacePressed(){
+  public void spacePressed(GraphicsContext gc, AnimationTimer timer){
     gc.setFill(Color.RED);
     gc.setFont(new Font("", 50));
     gc.fillText("Paused", 150, 250);
