@@ -1,24 +1,13 @@
 package edu.nju.lab.game;
 
-// import edu.nju.lab.characters.Snake;
 import edu.nju.lab.exception.CollapseException;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Random;
 
 import javafx.animation.AnimationTimer;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 
 import edu.nju.lab.characters.Snake;
 import edu.nju.lab.characters.Block;
